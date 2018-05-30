@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RestaurantDBModelStoreContainer" CdmEntityContainer="RestaurantDB">
+    <EntitySetMapping Name="AppData">
+      <EntityTypeMapping TypeName="RestaurantDBModel.AppData">
+        <MappingFragment StoreEntitySet="AppData">
+          <ScalarProperty Name="DishId" ColumnName="DishId" />
+          <ScalarProperty Name="DishName" ColumnName="DishName" />
+          <ScalarProperty Name="DishImage" ColumnName="DishImage" />
+          <ScalarProperty Name="DishDescription" ColumnName="DishDescription" />
+          <ScalarProperty Name="DishRating" ColumnName="DishRating" />
+          <ScalarProperty Name="DishPriceRange" ColumnName="DishPriceRange" />
+          <ScalarProperty Name="DishCuisineType" ColumnName="DishCuisineType" />
+          <ScalarProperty Name="DishProteinType" ColumnName="DishProteinType" />
+          <ScalarProperty Name="DishMeal" ColumnName="DishMeal" />
+          <ScalarProperty Name="RestaurantName" ColumnName="RestaurantName" />
+          <ScalarProperty Name="RestaurantDescription" ColumnName="RestaurantDescription" />
+          <ScalarProperty Name="RestaurantStreetAddress" ColumnName="RestaurantStreetAddress" />
+          <ScalarProperty Name="RestaurantCity" ColumnName="RestaurantCity" />
+          <ScalarProperty Name="RestaurantState" ColumnName="RestaurantState" />
+          <ScalarProperty Name="RestaurantZipCode" ColumnName="RestaurantZipCode" />
+          <ScalarProperty Name="GPSLocation" ColumnName="GPSLocation" />
+          <ScalarProperty Name="OpenTime" ColumnName="OpenTime" />
+          <ScalarProperty Name="CloseTime" ColumnName="CloseTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

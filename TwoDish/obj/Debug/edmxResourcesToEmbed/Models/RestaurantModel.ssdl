@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RestaurantDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AppData">
+    <Key>
+      <PropertyRef Name="DishId" />
+    </Key>
+    <Property Name="DishId" Type="int" Nullable="false" />
+    <Property Name="DishName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DishImage" Type="image" />
+    <Property Name="DishDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="DishRating" Type="int" />
+    <Property Name="DishPriceRange" Type="int" />
+    <Property Name="DishCuisineType" Type="nvarchar" MaxLength="50" />
+    <Property Name="DishProteinType" Type="nvarchar" MaxLength="50" />
+    <Property Name="DishMeal" Type="nvarchar" MaxLength="10" />
+    <Property Name="RestaurantName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RestaurantDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="RestaurantStreetAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="RestaurantCity" Type="nvarchar" MaxLength="50" />
+    <Property Name="RestaurantState" Type="nvarchar" MaxLength="25" />
+    <Property Name="RestaurantZipCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="GPSLocation" Type="geography" />
+    <Property Name="OpenTime" Type="time" Precision="7" />
+    <Property Name="CloseTime" Type="time" Precision="7" />
+  </EntityType>
+  <EntityContainer Name="RestaurantDBModelStoreContainer">
+    <EntitySet Name="AppData" EntityType="Self.AppData" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
