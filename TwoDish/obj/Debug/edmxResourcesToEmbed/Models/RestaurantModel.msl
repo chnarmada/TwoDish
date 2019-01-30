@@ -4,6 +4,10 @@
     <EntitySetMapping Name="AppData">
       <EntityTypeMapping TypeName="RestaurantDBModel.AppData">
         <MappingFragment StoreEntitySet="AppData">
+          <ScalarProperty Name="Sparefield3" ColumnName="Sparefield3" />
+          <ScalarProperty Name="Sparefield2" ColumnName="Sparefield2" />
+          <ScalarProperty Name="Sparefield1" ColumnName="Sparefield1" />
+          <ScalarProperty Name="DishImageUrl" ColumnName="DishImageUrl" />
           <ScalarProperty Name="DishId" ColumnName="DishId" />
           <ScalarProperty Name="DishName" ColumnName="DishName" />
           <ScalarProperty Name="DishImage" ColumnName="DishImage" />

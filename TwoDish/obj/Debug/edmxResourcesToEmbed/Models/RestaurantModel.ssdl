@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="DishId" />
     </Key>
-    <Property Name="DishId" Type="int" Nullable="false" />
+    <Property Name="DishId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DishName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="DishImage" Type="image" />
     <Property Name="DishDescription" Type="nvarchar" MaxLength="255" />
@@ -22,6 +22,10 @@
     <Property Name="GPSLocation" Type="geography" />
     <Property Name="OpenTime" Type="time" Precision="7" />
     <Property Name="CloseTime" Type="time" Precision="7" />
+    <Property Name="DishImageUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sparefield1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sparefield2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sparefield3" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityContainer Name="RestaurantDBModelStoreContainer">
     <EntitySet Name="AppData" EntityType="Self.AppData" Schema="dbo" store:Type="Tables" />

@@ -22,6 +22,10 @@
     <Property Name="GPSLocation" Type="Geography" />
     <Property Name="OpenTime" Type="Time" Precision="7" />
     <Property Name="CloseTime" Type="Time" Precision="7" />
+    <Property Name="DishImageUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sparefield1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sparefield2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sparefield3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityContainer Name="RestaurantDB" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="AppData" EntityType="Self.AppData" />

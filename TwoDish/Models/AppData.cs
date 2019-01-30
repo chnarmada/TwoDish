@@ -6,10 +6,7 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Web.Http.OData;
-using System.ComponentModel.DataAnnotations;
+
 namespace RestaurantApp.Models
 {
     using System;
@@ -17,7 +14,6 @@ namespace RestaurantApp.Models
     
     public partial class AppData
     {
-        [Key]
         public int DishId { get; set; }
         public string DishName { get; set; }
         public byte[] DishImage { get; set; }
