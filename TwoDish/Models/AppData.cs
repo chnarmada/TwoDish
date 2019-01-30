@@ -36,5 +36,9 @@ namespace RestaurantApp.Models
         public System.Data.Entity.Spatial.DbGeography GPSLocation { get; set; }
         public Nullable<System.TimeSpan> OpenTime { get; set; }
         public Nullable<System.TimeSpan> CloseTime { get; set; }
+        public string DishImageUrl { get; set; }
+        public string Sparefield1 { get; set; }
+        public string Sparefield2 { get; set; }
+        public string Sparefield3 { get; set; }
     }
 }
